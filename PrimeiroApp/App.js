@@ -1,8 +1,16 @@
-import React from 'react';
-import { View } from 'react-native';
+import React, { Component } from 'react';
+import { View, Text } from 'react-native';
 
-function App(){
-  return(
-    <View>Olá! Bem-vindo ao meu primeiro App</View>
-  );
+class App extends Component{
+  render(){
+    return(
+      <View>
+        <Text>Olá Mundo!</Text>
+        <Text>Meu Primeiro App</Text>
+      </View>
+    );
+  }
 }
+
+
+export default App;
