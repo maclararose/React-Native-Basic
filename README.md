@@ -3,7 +3,7 @@ Basic React Native module - Fabrica de Apps
 
 - Understanding React Native; ✅
 - Basic struct; ✅
-- Understanding Props;
+- Understanding Props; ✅
 - Create components;
 - Understanding States;
 - React Native;
