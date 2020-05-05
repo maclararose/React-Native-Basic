@@ -9,7 +9,7 @@ Basic React Native module - Fabrica de Apps
 - React Native; ✅
 - Applying style groups; ✅
 - Property types; ✅
-- Dynamic and fixed sizes;
+- Dynamic and fixed sizes; ✅
 - Flexbox and alignments;
 - Receiving data;
 - Working with buttons;
