@@ -1,14 +1,18 @@
 import React, { Component } from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text} from 'react-native';
 
 class App extends Component{
   render(){
     return(
-      <View style={styles.container}>
-        <Text style={[styles.textOne, styles.aligmentText]}>Eu sou o texto 1</Text>
-        <Text style={styles.aligmentText}>Eu sou o texto 2</Text>
-        <Text style={styles.aligmentText}>Eu sou o texto 3</Text>
-        <Text style={styles.aligmentText}>Eu sou o texto 4</Text>
+      <View style={{flex: 1, backgroundColor: '#222'}}>
+
+        <View style={{height: 65, backgroundColor: '#FFF'}}></View>
+
+        <View style={{flex: 1, backgroundColor: 'grey'}}>
+          <Text>Hello World!</Text>
+        </View>
+
+        <View style={{height: 65, backgroundColor: '#FFF'}}></View>
 
       </View>
 
@@ -16,22 +20,5 @@ class App extends Component{
   }
 }
 
-const styles = StyleSheet.create({
-  container:{
-    marginTop: 100,
-    
-  },
-
-  textOne:{
-    color: 'red',
-    fontSize: 30
-  },
-
-  aligmentText:{
-    textAlign: 'center'
-
-  }
-
-});
 
 export default App;
