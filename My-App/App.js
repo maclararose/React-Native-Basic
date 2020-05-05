@@ -7,16 +7,16 @@ class App extends Component{
       <View style={{flex: 1, 
                     flexDirection: 'row', 
                     justifyContent: 'flex-end', 
-                    alignItems: 'center'
+                    alignItems: 'strecth'
                   }}>
 
-        <View style={{width: 50, height: 50, backgroundColor: '#FF0000'}}></View>
+        <View style={{height: 50, backgroundColor: '#FF0000'}}></View>
 
-        <View style={{width: 50, height: 50, backgroundColor: 'grey'}}></View>
+        <View style={{height: 50, backgroundColor: 'grey'}}></View>
 
-        <View style={{width: 50, height: 50, backgroundColor: 'yellow'}}></View>
+        <View style={{height: 50, backgroundColor: 'yellow'}}></View>
 
-        <View style={{width: 50, height: 50, backgroundColor: 'violet'}}></View>
+        <View style={{height: 50, backgroundColor: 'violet'}}></View>
 
       </View>
 
