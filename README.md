@@ -11,7 +11,7 @@ Basic React Native module - Fabrica de Apps
 - Property types; ✅
 - Dynamic and fixed sizes; ✅
 - Flexbox and alignments; ✅
-- Receiving data;
+- Receiving data; ✅
 - Working with buttons;
 - About TextInput;
 - App 1: Fortune cookie;
