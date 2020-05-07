@@ -6,13 +6,18 @@ class App extends Component{
   constructor(props){
     super(props);
     this.state = {
-      name: 'Maria'
+      name: ''
     };
 
     this.pegaNome = this.pegaNome.bind(this);
   }
 
-  pegaNome(){
+  pegaNome(texto){
+    if(texto.length > 0){
+      this.setState({name: 'Bem vindo: ' + texto});
+    }else{
+      this.setState({name: ''});
+    }
     
   }
 
@@ -27,7 +32,7 @@ class App extends Component{
       onChangeText={this.pegaNome}
       />
 
-    <Text style={styles.text}>Welcome, {this.state.name}</Text>
+    <Text style={styles.text}> {this.state.name}</Text>
 
       </View>
     );
