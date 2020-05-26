@@ -1,24 +1,25 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, View, TextInput } from 'react-native';
+import { StyleSheet, Text, View, TextInput, Button } from 'react-native';
 
 class App extends Component{
 
   constructor(props){
     super(props);
     this.state = {
-      name: ''
+      name: '',
+      input: ''
     };
 
-    this.pegaNome = this.pegaNome.bind(this);
+    this.enter = this.enter.bind(this);
   }
 
-  pegaNome(texto){
-    if(texto.length > 0){
-      this.setState({name: 'Bem vindo: ' + texto});
-    }else{
-      this.setState({name: ''});
+  enter(){
+    if(this.state.input === ''){
+      alert('Digite seu nome!');
+      return;
     }
     
+    this.setState({name: 'Bem vindo(a), '+ this.state.input});
   }
 
   render(){
@@ -29,8 +30,10 @@ class App extends Component{
       style={styles.input} 
       placeholder = "Type your name"
       underlineColorAndroid="transparent"
-      onChangeText={this.pegaNome}
+      onChangeText={ (texto) => this.setState({input: texto}) }
       />
+
+      <Button title="Enter" onPress={this.enter}/>
 
     <Text style={styles.text}> {this.state.name}</Text>
 
