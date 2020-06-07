@@ -15,4 +15,4 @@ Basic React Native module - Fabrica de Apps
 - Working with buttons; ✅
 - About TextInput; ✅
 - App 1: Fortune cookie; ✅
-- App 2: Stopwatch;
+- App 2: Stopwatch; ✅
